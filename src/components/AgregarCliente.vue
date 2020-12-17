@@ -61,7 +61,7 @@ export default {
         direccion: this.direccion
       };
       axios
-        .post("https://factapp4v2.herokuapp.com/clientes/agregar/" + this.username, datosJson)
+        .post("https://factapp4v2.herokuapp.com/clientes/agregar/", datosJson)
         .then(response => {
           alert(response.data.mensaje);
         })
