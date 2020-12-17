@@ -36,7 +36,7 @@ export default {
   },
   beforeCreate: function() {
     axios
-      .get("http://127.0.0.1:8000/clientes/lista")
+      .get("https://factapp4v2.herokuapp.com/clientes/lista/" + this.username)
       .then(response => {
         this.lista_clientes = response.data;
       })
